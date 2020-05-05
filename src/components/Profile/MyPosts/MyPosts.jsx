@@ -1,34 +1,22 @@
 import React from "react";
-import style from './Profile.module.css';
+import style from './MyPosts.module.css';
+import Post from "./Posts/Post";
 
-const Profile = () => {
+const MyPosts = () => {
     return (
-        <div className={style.content}>
+        <div>
+            my posts
             <div>
-                <img src='https://www.w3schools.com/howto/img_snow_wide.jpg'/>
+                <textarea></textarea>
+                <button>add post</button>
             </div>
-            <div>
-                1
-            </div>
-            <div>
-                2
-            </div>
-            <div>
-                3
-            </div>
-            <div className='posts'>
-                <div className={style.item}>
-                    post1
-                </div>
-                <div className={style.item}>
-                    post2
-                </div>
+            <div className={style.posts}>
+                <Post message='hi, hoe are you' likesCount='0'/>
+                <Post message="it's my first message" likesCount='2'/>
             </div>
 
+        </div>)
 
-        </div>
+};
 
-    )
-}
-
-export default Profile;
+export default MyPosts;
