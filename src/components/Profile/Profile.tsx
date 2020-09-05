@@ -9,7 +9,7 @@ type ProfileType = {
     updateNewPostText: (newText: string) => void
 }
 
-const Profile: React.FC<ProfileType> = (props) => {
+const Profile: React.FC<ProfileType> = (propppps) => {
 
     return (
         <div>
