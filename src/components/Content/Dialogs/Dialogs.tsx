@@ -4,6 +4,8 @@ import DialogItem from "./DialogItem/DialogItem";
 import Message from "./Message/Message";
 import {DialogsPageType} from "../../../redux/state";
 
+
+
 const Dialogs: React.FC<DialogsPageType> = (props) => {
 
     const dialogsElements = props.dialogs.map(dialog =>
